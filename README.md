@@ -23,9 +23,9 @@ wait $PID_PROCESS
 pkill -9 $PID_MONITOR
 ```
 
-The above sequence of commands starts the logging process and stores the process ID. A command is then executed (here we just sleep for 30 seconds, but this can be anything) and this PID is stored too. The script waits to the process around which the memory usage is being logged to finish and then kills the memory monitor process.
+The above sequence of commands starts the logging process and stores the process ID. A command is then executed (here we just sleep for 30 seconds, but this can be anything) and this PID is stored too. The script waits for the process around which the memory usage is being logged to finish and then kills the memory monitor process.
 
-The Python script `view_gpu_memory_usage.py` can be used to visualise the resulting log file. Run the following from the command link for a full description of arguments:
+The Python script `view_gpu_memory_usage.py` can be used to visualise the resulting log file. Run the following for a full description of the available arguments:
 
 `   >> python view_gpu_memory_usage.py --help`
 
