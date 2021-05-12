@@ -22,7 +22,7 @@ parser.add_argument(
     '-v', '--version', action='version', version='%(prog)s 0.2'
 )
 parser.add_argument(
-    '-j', '--job-id', metavar='',
+    '-j', '--job-id', metavar='', required=True,
     help="SLURM job ID."
 )
 parser.add_argument(
