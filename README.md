@@ -35,6 +35,8 @@ To visualise the provided example data, run the following from the repository ro
 
 This will parse the `gpu.log` file in the `test_data` directory, show a plot on the screen and save the plot to the `test_data` directory.
 
+![gpu_log](https://user-images.githubusercontent.com/50923318/117954117-9b383c00-b30e-11eb-8dbd-8a769c9a9fca.png)
+
 ## Requirements
 - NVIDIA System Management Interface (tested with v450.119.03).
 - Python 3 (tested with v3.7.4) with pandas (tested with v0.25.1) and matplotlib (tested with v3.1.3).
