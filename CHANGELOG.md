@@ -1,7 +1,9 @@
 # Unreleased
 - Specify time window in args of viewer script
 - Print some useful info (max usage, avg usage, etc.)
-- Make logger script to work with SLURM
+
+# v0.2
+- Added logger script that works with SLURM jobs
 
 # v0.1
 - Initial release
