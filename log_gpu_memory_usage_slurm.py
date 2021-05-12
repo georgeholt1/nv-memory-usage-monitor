@@ -82,5 +82,5 @@ if __name__ == "__main__":
         if not "Unknown" in query.stdout.splitlines()[2].split()[1]:
             ended = True
             print("Job finished")
-        time.sleep(args.timestep)
+        time.sleep(int(args.timestep))
     print("Finishing logging and closing")
