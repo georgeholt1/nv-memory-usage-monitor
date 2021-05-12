@@ -63,6 +63,7 @@ if __name__ == "__main__":
     log_file = os.path.join(args.outdir, "gpu.log")
     with open(log_file, 'w') as f:
         f.write("# GPU memory log\n")
+        f.write("timestamp, uuid, memory.used [MiB]\n")
     ended = False
     while not ended:
         log = subprocess.run(
