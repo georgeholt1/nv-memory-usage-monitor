@@ -1,6 +1,6 @@
 # Author: George K. Holt
 # License: MIT
-# Version: 0.1
+# Version: 0.2
 """
 Part of NV Memory Usage Monitor.
 
@@ -10,7 +10,6 @@ for usage instructions.
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
-import sys
 import os
 import argparse
 import itertools
@@ -21,7 +20,7 @@ parser = argparse.ArgumentParser(
     description="Visualise GPU memory usage."
 )
 parser.add_argument(
-    '-v', '--version', action='version', version='%(prog)s 0.1'
+    '-v', '--version', action='version', version='%(prog)s 0.2'
 )
 parser.add_argument(
     '-l', '--logfile', metavar='', default=os.getcwd(),
