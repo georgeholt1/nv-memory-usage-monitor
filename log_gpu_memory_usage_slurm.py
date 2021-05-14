@@ -46,8 +46,8 @@ if __name__ == "__main__":
     
     # periodically query squeue until job starts
     started = False
+    print("Waiting for job to start (if not already started)")
     while not started:
-        print("Waiting for job to start (if not already started)")
         query = subprocess.run(
             ["sacct", "-j", f"{args.job_id}", "-o", "start,end", "-X"],
             stdout=subprocess.PIPE,
